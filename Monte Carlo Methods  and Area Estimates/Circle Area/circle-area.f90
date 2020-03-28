@@ -4,7 +4,7 @@ Program circle_area
 
 integer  :: i,trials
 real     :: x,y,radius,area_approx,area_true,pi_approx,hits,counts
-real, parameter :: pi=3.141593,Area_square=1   !(unit squared) 
+real, parameter :: pi=3.141593,Area_square= r*r   !(unit squared) 
 
 write(*,*)  
 write(*,*)  "          Monte carlo method            "
