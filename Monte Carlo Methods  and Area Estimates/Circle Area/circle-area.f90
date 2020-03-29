@@ -1,5 +1,6 @@
 !  Monte carlo methods and Area estimation
-
+!  Area of circle = (N_hits/N_counts)*(area of rectangle )
+! area of square of length 2r is 4r^2
 Program circle_area
 
 integer  :: i,trials
@@ -34,11 +35,10 @@ counts = 0
 
   area_approx = 4*(hits/counts)*(radius*radius)
   area_true   = pi*(radius**2)
-  pi_approx   = area_approx/(radius**2)
+
   
   write(*,*)  " Estimated area of the circle =  " , area_approx  
   write(*,*)  " True area of the circle      =  " , area_true
-  write(*,*)  " Estimated value of PI        =  " , pi_approx
 
   
 end Program circle_area
